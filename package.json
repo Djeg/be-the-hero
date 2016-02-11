@@ -1,0 +1,30 @@
+{
+  "jspm": {
+    "dependencies": {
+      "jasmine": "npm:jasmine@^2.4.1",
+      "ts": "github:frankwallis/plugin-typescript@^3.0.2"
+    },
+    "devDependencies": {
+      "ts-runtime": "npm:babel-runtime@^5.8.24",
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "jspm": "^0.16.27",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "karma-jspm": "^2.0.2",
+    "karma-spec-reporter": "0.0.24",
+    "karma-systemjs": "^0.11.0",
+    "lite-server": "^2.0.1",
+    "systemjs": "^0.19.20",
+    "typescript": "^1.7.5"
+  },
+  "scripts": {
+    "start": "lite-server",
+    "test": "karma start --single-run",
+    "postinstall": "jspm install"
+  }
+}

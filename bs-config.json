@@ -1,0 +1,12 @@
+{
+  "port": 9000,
+  "files": ["./web/**/*.html", "./lib/**/*.ts"],
+  "server": {
+    "baseDir": "web",
+    "routes": {
+      "/jspm_packages": "jspm_packages",
+      "/config.js": "config.js",
+      "/lib": "lib"
+    }
+  }
+}
