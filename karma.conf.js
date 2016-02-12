@@ -19,7 +19,8 @@ module.exports = function(config) {
       '/specs/': '/base/specs/',
       '/lib/': '/base/lib/',
       '/jspm_packages/': '/base/jspm_packages/',
-      '/node_modules/': '/base/node_modules/'
+      '/node_modules/': '/base/node_modules/',
+      '/typings/': '/base/typings/'
     },
 
 
@@ -73,7 +74,7 @@ module.exports = function(config) {
     jspm: {
       config: 'config.js',
       loadFiles: ['specs/**/*Spec.ts'],
-      serveFiles: ['lib/**/*.ts']
+      serveFiles: ['lib/**/*.ts', 'typings/**/*.ts']
     }
   })
 }
